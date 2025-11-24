@@ -2,6 +2,8 @@
 
 A web-based dashboard to create, manage, and monitor multiple PocketBase instances using PM2 process manager.
 
+![PocketBase Manager Dashboard](./docs/pb_manager.png)
+
 ## ✨ Features
 
 - 📦 **Create Instances** - Download and set up PocketBase instances with a few clicks
