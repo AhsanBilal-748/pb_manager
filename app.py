@@ -49,7 +49,7 @@ if __name__ == '__main__':
     print(f"📁 Downloads directory: {Config.DOWNLOADS_DIR}")
     print(f"🔑 Admin user: {Config.ADMIN_USERNAME}")
     print("="*50)
-    print("\n🚀 Starting server at http://127.0.0.1:5000")
+    print(f"\n🚀 Starting server at http://{Config.HOST}:{Config.PORT}")
     print("\n")
     
     app.run(host=Config.HOST, port=Config.PORT, debug=Config.DEBUG)
