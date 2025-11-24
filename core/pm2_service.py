@@ -27,6 +27,12 @@ class PM2Service:
         except Exception as e:
             return (False, '', str(e))
     
+    def save(self) -> bool:
+        success, stdout, stderr = self._run_command(['pm2', 'save'])
+        if not success:
+            print(f"Failed to save PM2 configuration: {stderr}")
+        return success
+    
     def start_instance(self, name: str, executable_path: str, port: int, data_dir: str) -> bool:
         """
         Start PocketBase instance with PM2 using run.sh script
@@ -58,7 +64,9 @@ class PM2Service:
         success, stdout, stderr = self._run_command(command)
         if not success:
             print(f"Failed to start instance: {stderr}")
-        return success
+            return False
+        self.save()
+        return True
     
     def stop_instance(self, pm2_name: str) -> bool:
         """Stop PM2 process"""
@@ -79,7 +87,9 @@ class PM2Service:
         success, stdout, stderr = self._run_command(['pm2', 'delete', pm2_name])
         if not success:
             print(f"Failed to delete instance: {stderr}")
-        return success
+            return False
+        self.save()
+        return True
     
     def get_all_status(self) -> Dict[str, Dict]:
         """
